@@ -1,6 +1,6 @@
-if SHIELD_ODETTE_PRECURSOR_3X2 // must match kconfig.shield
+if SHIELD_TEST3X2 // must match kconfig.shield
 
   config ZMK_KEYBOARD_NAME
-    default "Odette 3x2" // name this whatever you want, can't be more than 16 characters
+    default "Test 3x2" // name this whatever you want, can't be more than 16 characters
 
   endif
