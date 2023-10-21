@@ -24,7 +24,7 @@ RC(2,0)
 		>;
 	};
 
-	default_keyscan: kscan {
+	default_kscan: kscan {
 		compatible = "zmk,kscan-gpio-matrix";
 		label = "KSCAN"; // can name it whatever
 
