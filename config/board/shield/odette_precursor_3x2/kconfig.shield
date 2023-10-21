@@ -1,2 +1,2 @@
-config SHIELD_ODETTE_PRECURSOR_3X2
-  def_bool $(shields_list_contains, odette_precursor_3x2) # this name is referenced by build.yaml
+config SHIELD_TEST3X2
+  def_bool $(shields_list_contains, test3x2) # this name is referenced by build.yaml
