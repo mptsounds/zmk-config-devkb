@@ -14,4 +14,4 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: odette_precursor_3x2
+    shield: test3x2
