@@ -1,6 +1,6 @@
 if SHIELD_TEST3X2
 
-  config ZMK_KEYBOARD_NAME
+config ZMK_KEYBOARD_NAME
     default "Test 3x2"
 
 endif
