@@ -30,14 +30,14 @@ RC(1,0) RC(1,1)
 
 		diode-direction = "col2row";
 		row-gpios
-			= <&gpio0 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>     //Row0
-			, <&gpio0 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>     //Row1
-			, <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>     //Row2
+			= <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>     //Row0
+			, <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>     //Row1
+			, <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>     //Row2
 			;
 
 		col-gpios
-			= <&gpio0 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>     //Col0
-			, <&gpio0 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>     //Col1
+			= <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>     //Col0
+			, <&xiao_d 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>     //Col1
 			;
 		
 	};
