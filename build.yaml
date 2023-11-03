@@ -15,3 +15,5 @@
 include:
   - board: seeeduino_xiao_ble
     shield: test3x2
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
