@@ -1,0 +1,8 @@
+file_format: "1"
+id: test3x2
+name: Test 3x2
+type: shield
+url: https://github.com/mptsounds/zmk-config-odette/tree/master
+requires: [seeed_xiao]
+features:
+  - keys
