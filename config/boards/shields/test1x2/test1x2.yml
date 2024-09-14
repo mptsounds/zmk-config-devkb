@@ -1,0 +1,8 @@
+file_format: "1"
+id: test1x2
+name: Test 1x2
+type: shield
+url: https://github.com/mptsounds/zmk-config-devkb/tree/master
+requires: [seeed_xiao]
+features:
+  - keys
