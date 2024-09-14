@@ -8,9 +8,9 @@
 
         default_layer {
             bindings = <
-                &kp B     &bt BT_CLR
-                &mo 1     &kp C
-                &bt BT_CLR
+                &kp A     &bt BT_CLR
+//                &mo 1     &kp C
+//                &bt BT_CLR
             >;
         }; 
         
