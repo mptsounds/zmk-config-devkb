@@ -25,15 +25,15 @@ RC(0,0) RC(0,1)
 		compatible = "zmk,kscan-gpio-matrix";
 		label = "KSCAN"; // can name it whatever
 
-		diode-direction = "col2row";
+		diode-direction = "row2col";
+
+		row-gpios
+			= <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>     //Row0
+			;
 
 		col-gpios
 			= <&xiao_d 1 (GPIO_ACTIVE_HIGH)>     //Col0
 			, <&xiao_d 2 (GPIO_ACTIVE_HIGH)>     //Col1
-			;
-
-		row-gpios
-			= <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>     //Row0
 			;
 
 	};
