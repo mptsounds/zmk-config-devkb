@@ -14,7 +14,7 @@
 		spi-max-frequency = <200000>;
 		reg = <0>;
 		#gpio-cells = <2>; // GPIO reference to this shift register requires 2 values: GPIO no. & GPIO flag
-		ngpios = <1>; // no. of additional GPIO(s)?
+		ngpios = <8>; // no. of additional GPIOs. Must match enum list in ZMK main repo (zmk,gpio-595.yaml [8, 16, 24, 32])
 	};
 };
 
