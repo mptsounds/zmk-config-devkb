@@ -1,0 +1,6 @@
+if SHIELD_TEST1X2
+
+config ZMK_KEYBOARD_NAME
+    default "Test 1x2 shift"
+
+endif
