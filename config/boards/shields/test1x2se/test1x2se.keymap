@@ -8,10 +8,14 @@
 
         default_layer {
             bindings = <
-                &kp A     &bt BT_CLR
+                &kp A     &bt BT_CL     &kp E
 //                &mo 1     &kp C
 //                &bt BT_CLR
             >;
+
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT>; // press left & right keys
+
+
         }; 
         
 //        bt_layer {

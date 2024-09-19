@@ -6,3 +6,4 @@ url: https://github.com/mptsounds/zmk-config-devkb/tree/master
 requires: [seeed_xiao]
 features:
   - keys
+  - encoder
