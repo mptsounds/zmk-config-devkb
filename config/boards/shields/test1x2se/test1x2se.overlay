@@ -1,0 +1,56 @@
+// Notes: this file's should match what's used in the .shield file's
+// Since this is matrix wiring, we need a matrix transform macro, hence the "include" line.
+
+#include <dt-bindings/zmk/matrix_transform.h>
+
+&xiao_spi {
+	status = "okay";
+
+	cs-gpios = <&xiao_d 7 GPIO_ACTIVE_LOW>; // define CS pins
+	shift_reg: 595@0 {
+		compatible = "zmk,gpio-595";
+		status = "okay";
+		gpio-controller;
+		spi-max-frequency = <200000>;
+		reg = <0>;
+		#gpio-cells = <2>; // GPIO reference to this shift register requires 2 values: GPIO no. & GPIO flag
+		ngpios = <8>; // no. of additional GPIOs. Must match enum list in ZMK main repo (zmk,gpio-595.yaml [8, 16, 24, 32])
+	};
+};
+
+/ {
+	chosen {
+		zmk,kscan = &default_kscan;
+		zmk,matrix_transform = &default_transform;
+	};
+
+	default_transform: matrix_transform {
+		compatible = "zmk,matrix-transform";
+		columns = <2>;
+		rows = <1>;
+// | K1  | K2  |
+// | K3  | K4  |
+
+		map = <
+RC(0,0) RC(0,1)
+		>;
+	};
+
+	default_kscan: kscan {
+		compatible = "zmk,kscan-gpio-matrix";
+		label = "KSCAN"; // can name it whatever
+
+		diode-direction = "col2row";
+
+		col-gpios
+			= <&xiao_d 1 (GPIO_ACTIVE_HIGH)>     //Col0
+			, <&shift_reg 0 (GPIO_ACTIVE_HIGH)>     //Col1, pin 15 of shift reg
+			;
+
+		row-gpios
+			= <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>     //Row0
+			;
+
+	};
+   
+};
