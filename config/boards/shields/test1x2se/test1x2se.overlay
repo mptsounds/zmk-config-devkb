@@ -2,6 +2,7 @@
 // Since this is matrix wiring, we need a matrix transform macro, hence the "include" line.
 
 #include <dt-bindings/zmk/matrix_transform.h>
+#include "test1x2se.dtsi"
 
 &xiao_spi {
 	status = "okay";
