@@ -54,8 +54,8 @@ RC(0,0) RC(0,1) RC(0,2)
 
 	};
 
-	&left_encoder {
-		status = "okay";
-	};
+};
 
+&left_encoder {
+	status = "okay";
 };
