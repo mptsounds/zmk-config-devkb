@@ -9,21 +9,11 @@
         default_layer {
             bindings = <
                 &bootloader     &bt BT_CLR    &kp E
-//                &mo 1     &kp C
-//                &bt BT_CLR
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT RIGHT>; // press left & right keys
 
-
         }; 
-        
-//        bt_layer {
-//            bindings = <
-//                &trans     &bootloader
-//                &trans     &bt BT_CLR
-//                &bt BT_SEL 0
-//            >;
-//        };
+
     };
 };
