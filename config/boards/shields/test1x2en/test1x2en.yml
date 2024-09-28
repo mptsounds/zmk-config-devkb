@@ -1,0 +1,9 @@
+file_format: "1"
+id: test1x2en
+name: Test 1x2 enc nav
+type: shield
+url: https://github.com/mptsounds/zmk-config-devkb/tree/master
+requires: [seeed_xiao]
+features:
+  - keys
+  - encoder

@@ -1,0 +1,9 @@
+if SHIELD_TEST1X2EN
+
+config ZMK_KEYBOARD_NAME
+    default "Test 1x2s enc nav"
+
+config SPI
+	default y
+
+endif

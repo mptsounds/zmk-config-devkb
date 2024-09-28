@@ -1,0 +1,23 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+/ {  
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                &bootloader     &bt BT_CLR    &kp X
+                &kp A     &kp B     &kp C     &kp D     &kp S     
+            >;
+
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT>; // press left & right keys
+
+        }; 
+
+    };
+};
+
+// | K1  | K2  | ENC_PUSH
+// | N_A | N_B | N_C       | N_D | N_S

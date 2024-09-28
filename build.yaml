@@ -14,7 +14,7 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: test1x2se
+    shield: test1x2en
     # Below is firmware to flash for resetting the kb:
   - board: seeeduino_xiao_ble
     shield: settings_reset
