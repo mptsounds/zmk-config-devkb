@@ -1,7 +1,7 @@
 if SHIELD_TEST1X2EN
 
 config ZMK_KEYBOARD_NAME
-    default "Test 1x2s enc nav"
+    default "Test 1x2s e_nav"
 
 config SPI
 	default y
