@@ -46,10 +46,10 @@ RC(1,0) RC(1,1) RC(1,2) RC(1,3) RC(1,4)
 
 		col-gpios
 			= <&xiao_d 2 (GPIO_ACTIVE_HIGH)>     //Col0
-			, <&shift_reg 6 (GPIO_ACTIVE_HIGH)>     //Col1, pin 15 of shift reg
-			, <&xiao_d 3 (GPIO_ACTIVE_HIGH)>     //Col2, encoder
-			, <&xiao_d 4 (GPIO_ACTIVE_HIGH)>     //Col2, encoder
-			, <&xiao_d 5 (GPIO_ACTIVE_HIGH)>     //Col2, encoder
+			, <&xiao_d 3 (GPIO_ACTIVE_HIGH)>     //Col1
+			, <&xiao_d 4 (GPIO_ACTIVE_HIGH)>     //Col2
+			, <&xiao_d 5 (GPIO_ACTIVE_HIGH)>     //Col2
+			, <&xiao_d 6 (GPIO_ACTIVE_HIGH)>     //Col2
 			;
 
 		row-gpios
