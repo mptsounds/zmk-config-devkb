@@ -1,11 +1,14 @@
+### 🚧 This page is under construction! 🚧###
+=============
+
 ### ABOUT ###
 =============
 
 A collection of mini development keyboards for Project Obluda.
 
-I will eventually make this into a reference repository for my upcoming beginner-friendly blog mini-series about my journey to build your first keyboard *from scratch* using ZMK (Zephyr Mechanical Keyboard) firmware, which was built on the Zephyr™ Project Real Time Operating System (RTOS).
+I will eventually make this into a reference repository for my upcoming beginner-friendly blog mini-series about my journey to build my first keyboard *from scratch* using ZMK (Zephyr Mechanical Keyboard) firmware, which was built on the Zephyr™ Project Real Time Operating System (RTOS).
 
-There are already plenty of keyboard building guides online, but none had all most of what I needed to know when I first started. I hope this will be of some use, along with other existing guides, to complete beginners to the world of custom keyboards, embedded systems and electronics.
+There are already plenty of keyboard building guides online, but none had most of the features & guides I needed to know when I first started. I hope this will be of some use, along with other existing guides, to complete beginners to the world of custom keyboards, embedded systems and electronics.
 
 
 ### REFERENCES ###
